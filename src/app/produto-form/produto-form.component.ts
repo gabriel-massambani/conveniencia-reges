@@ -43,7 +43,6 @@ export class ProdutoFormComponent {
     } else {
       console.error('ID do produto inválido.');
     }
-    // Redirecionar para a lista de produtos após salvar
     this.router.navigate(['/produtos']);
   }
 

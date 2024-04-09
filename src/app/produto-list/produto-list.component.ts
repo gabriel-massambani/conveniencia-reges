@@ -28,7 +28,6 @@ export class ProdutoListComponent {
     if (confirm('Tem certeza que deseja deletar este produto?')) {
       if (produto.id !== undefined) {
         this.service.deletar(produto.id);
-        // Após a remoção, você pode querer atualizar a lista de produtos
         this.obterTodos();
       } else {
         console.error('ID do produto é undefined.');
